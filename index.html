@@ -8,7 +8,7 @@
 <body>
 <!--Header of site-->
 <header>
-	<section>
+	<section class="container">
 		<nav>
 			<ul class="main-menu">
 				<li><a href="#"></a>Информация</li>
@@ -22,28 +22,101 @@
 			<a href="#" class="user-block">ВХОД</a>
 		</div>
 	</section>
+	
+</header>
+<!--Main of site-->
+<main class="container">
 	<div class="logo">
 		<img src="img/BORODINSKI Logo.png" alt="logo of Borodinskiy">
 	</div>
-</header>
-<!--Main of site-->
-<main>
-	
-	<section>
-		<h2>БЫСТРО</h2>
-		<h2>КРУТО</h2>
-		<h2>ДОРОГО</h2>
-		<img src="img/icon_advantages.svg">
-		<img src="img/icon_advantages.svg">
-		<img src="img/icon_advantages.svg">
+	<section class="features">
+		<div class="features-item">
+		<b class="features-name">БЫСТРО</b>
 		<p>Мы делаем свою работу быстро! два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+		</div>
+		<div class="features-item">
+		<b class="features-name">КРУТО</b>
 		<p>Забудьте как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне</p>
+		</div>
+		<div class="features-item">
+		<b class="features-name">ДОРОГО</b>
 		<p>наши мастера - профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?</p>
+		</div>
 	</section>
-	<section>
-		
-	</section>
+	<div class="content">
+		<div class="content-left">
+			<h2 class="content-title">Новости</h2>
+			<ul class="news">
+				<li>
+					<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+					<time datetime="2017-11-01">1 ноября</time>
+				</li>
+				<li>
+					<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши ряды</p>
+					<time datetime="2017-11-05">5 ноября</time>
+				</li>
+			</ul>
+			<a href="#" class="btn">Все новости</a>
+		</div>
+		<div class="content-right">
+			<h2 class="content-title">Фотогалерея</h2>
+			<div class="gallery">
+			<figure class="gallery-content">
+				<img src="" alt="">
+			</figure>
+			<button type="button" class="btn-gallery-prev">Назад</button>
+			<button type="button" class="btn-gallery-next">Вперед</button>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="content-left">
+			<h2 class="content-title">Контактная информация</h2>
+			<p>
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, ул. Борюшкина, д.23<br>
+				Телефон: +7 854 524 78 59
+			</p>
+			<p>
+				Время работы:<br>
+				пн.-пт.: 10:00 - 22:00<br>
+				сб.-вс.: 10:00 - 19:00
+			</p>
+			<a href="#" class="btn">Как проехать</a>
+			<a href="#" class="btn">Обратная связь</a></div>
+		<div class="content-right">
+			<h2 class="content-title">Записаться</h2>
+			<p>Укажите желаемое время и дату и мы свяжемся с вами для подтверждения брони</p>
+			<form class="application-form" action="https://www.blabla.com" method="post">
+				<input type="text" name="date" value="" placeholder="Дата">
+				<input type="text" name="time" value="" placeholder="Время">
+				<input type="text" name="name" value="" placeholder="Ваше имя">
+				<input type="tel" name="phone" value="" placeholder="Телефон">
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
 </main>
 <!--Footer of site-->
+<footer class="main-footer">
+	<div class="container">
+		<section class="footer-contacts">
+			Барбершоп "Бородинский"<br>
+			Адрес: г. Санкт-Петербург, ул. Борюшкина, д.23<br>
+			<a href="#">Как проехать?</a><br>
+			Телефон: +7 854 524 78 59
+		</section>
+		<section class="footer-social">
+			<p>Давайте дружить!</p>
+			<a href="#" class="social-btn social-btn-v">v</a>
+			<a href="#" class="social-btn social-btn-f">f</a>
+			<a href="#" class="social-btn social-btn-i">i</a>
+		</section>
+		<section class="footer-copyright">
+			<p>Разработано:</p>
+			<a href="#" class="btn">Lazy_Cat</a>
+		</section>
+	</div>
+</footer>
 </body>
 </html>
