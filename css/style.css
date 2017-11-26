@@ -16,6 +16,10 @@ text-transform: uppercase;
 background: #000 url('../img/bg.jpg') no-repeat center top;
 
 }
+.inner-page {
+	color: #000;
+	background: #f8f3f0 url("../img/content-bg1.png") repeat;
+}
 /*
 .sprite {
     background-image: url(spritesheet.png);
@@ -97,6 +101,31 @@ background: #000 url('../img/bg.jpg') no-repeat center top;
 }
 .main-menu a:hover {
 	background: #242424;
+}
+.main-menu .active {
+	position: relative;
+	background-color: none;
+}
+.main-menu .active a:hover {
+	background: none;
+}
+.main-menu .active::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	bottom: 0;
+	right: 20px;
+	left: 20px;
+	background: #fff;
+}
+.main-menu .inner-logo {
+	float: left;
+	width: 111px;
+	height: 20px;
+	padding-top: 22px;
+}
+.main-menu .inner-logo:hover {
+	background: none;
 }
 .user-block {
 	max-width: 140px;
