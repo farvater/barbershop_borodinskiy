@@ -35,32 +35,45 @@ background: #000 url('../img/bg.jpg') no-repeat center top;
 .sprite-icon-fb {
     width: 12px;
     height: 22px;
-    background-position: -5px -5px;
+    background-position: -20px -20px;
 }
 
 .sprite-icon-inst {
     width: 21px;
     height: 21px;
-    background-position: -27px -5px;
+    background-position: -72px -20px;
 }
 
 .sprite-icon-login {
     width: 18px;
     height: 16px;
-    background-position: -27px -36px;
+    background-position: -133px -20px;
 }
 
 .sprite-icon-vk {
     width: 25px;
     height: 16px;
-    background-position: -58px -5px;
+    background-position: -191px -20px;
 }
 
 .sprite-icon_checkbox {
     width: 12px;
     height: 12px;
-    background-position: -58px -31px;
+    background-position: -256px -20px;
 }
+
+.sprite-login {
+    width: 15px;
+    height: 15px;
+    background-position: -308px -20px;
+}
+
+.sprite-password {
+    width: 15px;
+    height: 17px;
+    background-position: -363px -20px;
+}
+
 */
 .clearfix::after {
 	content: "";
@@ -158,7 +171,7 @@ background: #000 url('../img/bg.jpg') no-repeat center top;
 	width: 18px;
 	height: 18px;
 	background: url('../img/sprite.png') no-repeat;
-	background-position: -27px -36px;
+	background-position: -133px -20px;
 }
 .login:hover::before {
 	opacity: 0.5;
@@ -469,6 +482,7 @@ display: none;
 
 /*pop-up window*/
 .modal-content {
+	display: none;
 	position: absolute;
 	top: 120px;
 	left: 50%;
@@ -534,14 +548,17 @@ display: none;
 .login-form input:focus {
 	border-color: #663d15;
 }
+
 .login-form input.icon-login {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: 
+	background: url("../img/login.png") no-repeat;
+	
+	background-position: 270px 50%;
 }
 .login-form input.icon-password {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: 
+	background: url("../img/password.png") no-repeat;
+	background-position: 270px 50%;
 }
+
 .login-form .restore {
 	float: right;
 	color: #000;
@@ -584,7 +601,31 @@ display: none;
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
 	transform: rotate(-45deg);
 }
-
+/*map*/
+.modal-content-map {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -390px;
+	width:766px;
+	height:561px;
+	z-index: 20;
+	background: #e9e5dc url("../img/map.png");
+	border: 7px solid white;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
 
 /*shop-page*/
 
@@ -636,14 +677,14 @@ text-align: center;
 opacity: 0.5;
 }
 .social-btn-v {
-    background-position: -50px 8px;
+    background-position: -187px -10px;
 }
 .social-btn-f {
-   background-position: 12px 5px;
+   background-position: -10px -10px;
 }
 
 .social-btn-i {
-    background-position: -17px 5px;
+     background-position: -62px -10px;
 }
 .footer-copyright {
 	float: right;
